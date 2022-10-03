@@ -24,7 +24,7 @@ export const Newsinfinite = (props) => {
     const res = await fetch(url);
     const data = await res.json();
     props.setProgress(70);
-    // console.log(data.articles);
+    console.log(data.articles);
     setArticles(data.articles);
     setTotalResults(data.totalResults);
     setLoading(false);
